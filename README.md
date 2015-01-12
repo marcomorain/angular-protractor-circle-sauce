@@ -4,6 +4,8 @@ Hello Sauce Labs / Circle CI,
 
 This repository contains an AngularJS application with a Protractor test. I'm looking to use CircleCI with Sauce to run the test as part of continuous integration. The test passes on my computer, but produces an error when run through Circle / Sauce. I need help in finding out why it doesn't work on Circle / Sauce.
 
+I've read the [document from Circle](https://circleci.com/docs/browser-testing-with-sauce-labs) and the [document from Sauce](https://docs.saucelabs.com/ci-integrations/circleci/) on this subject. They were helpful in getting me to this point, but provide no guidance on this predicament.
+
 You'll find instructions below for how to install the application, run the test, and a copy of the error message. Are you able to reproduce the issue on Circle / Sauce? What's the resolution?
 
 Thank you!
