@@ -2,9 +2,9 @@
 
 Hello Sauce Labs / Circle CI,
 
-This repository contains an AngularJS application with a Protractor test. I'm looking to use CircleCI with Sauce to run the test as part of continuous integration. The test passes on my computer, but produces an error when run through Circle / Sauce.
+This repository contains an AngularJS application with a Protractor test. I'm looking to use CircleCI with Sauce to run the test as part of continuous integration. The test passes on my computer, but produces an error when run through Circle / Sauce. I need help in finding out why it doesn't work on Circle / Sauce.
 
-You'll find instructions below for how to install the application, run the test, and a copy of the error message. Are you able to reproduce the issue? What's the resolution?
+You'll find instructions below for how to install the application, run the test, and a copy of the error message. Are you able to reproduce the issue on Circle / Sauce? What's the resolution?
 
 Thank you!
 
@@ -17,7 +17,7 @@ To install the application and run its test on your computer, please follow thes
     $ npm test
     $ npm 
 
-To run the application and its test on CircleCI / SauceLabs:
+This, however, is not where the problem occurs. It happens when on Circle / Sauce. To run the application and its test on CircleCI / Sauce:
 
 1. Navigate your web browser to https://github.com/prendergast/angular-protractor-circle-sauce
 
@@ -26,6 +26,10 @@ To run the application and its test on CircleCI / SauceLabs:
 3. Navigate to http://circleci.com, sign into your account, and click "add projects." Select your Github account and check the box in step two which says "show forks." Click the "build project" button next to the project.
 
 4. Click the gear symbol next to the project, open the environment variables menu under "tweaks" and enter the variables with the following names (with corresponding values from your Sauce account): `SAUCE_ACCESS_KEY` and `SAUCE_USERNAME`
+
+5. Re-run the build. Click on the "x" towards the upper left on the CircleCI web interface, click into your build, and press "rebuild."
+
+An error message will result from the build step described below.
 
 
 # Error message
