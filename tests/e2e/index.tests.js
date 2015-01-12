@@ -5,7 +5,7 @@ describe("angular-protractor-circle-sauce", function () {
 
   describe("index", function () {
     it("should display the correct title", function () {
-      browser.get('/#');
+      browser.get('/');
       expect(browser.getTitle()).toBe('Hello World');
     });
   });
