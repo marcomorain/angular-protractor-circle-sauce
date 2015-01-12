@@ -23,12 +23,12 @@ The problem occurs on Circle / Sauce. To run the application and its test on Cir
 
 4. **Execute the test.** You'll need to re-run the build. Click on the "x" towards the upper left on the CircleCI web interface, click into your build, and press "rebuild."
 
-An error message will result from the build step described below.
+An error message will result from the build step, as described below.
 
 
 # Error message
 
-Here's what would seem to be the most important part of the error message:
+Here's (what would seem to be) the most important part of the error message:
 
     UnknownError: javascript error: document unloaded while waiting for result
 
@@ -85,7 +85,7 @@ Here's the full error message:
 
 # Note
 
-You can install this application and run its tests on your machine. However, this produces no errors for me and the test passses. The problem is only on Circle / Sauce.
+You can also install this application and run its tests on your machine, if you'd like. However, this produces no errors for me and the test passses. The problem only happens on Circle / Sauce.
 
     $ git clone git@github.com:prendergast/angular-protractor-circle-sauce.git
     $ npm install
