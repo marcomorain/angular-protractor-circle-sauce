@@ -1,0 +1,25 @@
+{
+  "name": "angular-protractor-circle-sauce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "$(npm bin)/protractor tests/protractor.conf.js",
+    "postinstall": "bower install && $(npm bin)/webdriver-manager update",
+    "pretest": "lsof -twni tcp:8080 | xargs kill -9; $(npm bin)/httpster -p 8080 &"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "httpster": "^1.0.0",
+    "jasmine-core": "^2.1.3",
+    "karma": "^0.12.31",
+    "karma-chrome-launcher": "^0.1.7",
+    "karma-firefox-launcher": "^0.1.4",
+    "karma-jasmine": "^0.3.4",
+    "protractor": "^1.5.0"
+  }
+}
