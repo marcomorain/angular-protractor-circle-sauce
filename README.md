@@ -15,15 +15,13 @@ Thank you!
 
 The problem occurs on Circle / Sauce. To run the application and its test on CircleCI / Sauce:
 
-1. Navigate your web browser to https://github.com/prendergast/angular-protractor-circle-sauce
+1. *Fork the project.* Navigate your web browser to https://github.com/prendergast/angular-protractor-circle-sauce and click the button that says "fork."
 
-2. Click the button that says "fork."
+2. *Add the project to Circle.* Navigate to http://circleci.com, sign into your account, and click "add projects." Select your Github account and check the box in step two which says "show forks." Click the "build project" button next to the project.
 
-3. Navigate to http://circleci.com, sign into your account, and click "add projects." Select your Github account and check the box in step two which says "show forks." Click the "build project" button next to the project.
+3. *Set the environment variables in Circle.* Click the gear symbol next to the project, open the environment variables menu under "tweaks" and enter the variables with the following names (with corresponding values from your Sauce account): `SAUCE_ACCESS_KEY` and `SAUCE_USERNAME`
 
-4. Click the gear symbol next to the project, open the environment variables menu under "tweaks" and enter the variables with the following names (with corresponding values from your Sauce account): `SAUCE_ACCESS_KEY` and `SAUCE_USERNAME`
-
-5. Re-run the build. Click on the "x" towards the upper left on the CircleCI web interface, click into your build, and press "rebuild."
+4. *Execute the test." You'll need to re-run the build. Click on the "x" towards the upper left on the CircleCI web interface, click into your build, and press "rebuild."
 
 An error message will result from the build step described below.
 
