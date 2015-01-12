@@ -87,6 +87,8 @@ Here's the full error message:
 
 You can also install this application and run its tests on your machine, if you'd like. However, this produces no errors for me and the test passses. The problem only happens on Circle / Sauce.
 
+Keep in mind: This will simply use the web browser on your local machine to run the test. It doesn't connect to Sauce Labs by Sauce Connect. (So it's not an accurate representation of what I'm looking to achieve.)
+
     $ git clone git@github.com:prendergast/angular-protractor-circle-sauce.git
     $ npm install
     $ npm test
