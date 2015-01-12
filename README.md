@@ -13,13 +13,7 @@ Thank you!
 
 # Installation and test execution
 
-To install the application and run its test on your computer, please follow these steps:
-
-    $ git clone git@github.com:prendergast/angular-protractor-circle-sauce.git
-    $ npm test
-    $ npm 
-
-This, however, is not where the problem occurs. It happens when on Circle / Sauce. To run the application and its test on CircleCI / Sauce:
+The problem occurs on Circle / Sauce. To run the application and its test on CircleCI / Sauce:
 
 1. Navigate your web browser to https://github.com/prendergast/angular-protractor-circle-sauce
 
@@ -90,3 +84,12 @@ Here's the full error message:
     [launcher] chrome #1 failed 1 test(s)
     [launcher] overall: 1 failed spec(s)
     [launcher] Process exited with error code 1 $(npm bin)/protractor tests/protractor.conf.js returned exit code 1
+
+# Note
+
+You can install this application and run its tests on your machine. However, this produces no errors for me and the test passses. The problem is only on Circle / Sauce.
+
+    $ git clone git@github.com:prendergast/angular-protractor-circle-sauce.git
+    $ npm install
+    $ npm test
+
